@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fish Creek Animal Clinic: Contact</title>
+
+  <!-- SEO Meta Description -->
+  <meta name="description" content="Contact Fish Creek Animal Clinic for appointments, new patients, information, and veterinary questions.">
+
+  <link href="fishcreek.css" rel="stylesheet">
+</head>
+<body>
+  <div id="wrapper">
+    <header>
+      <h1><a href="index.html">Fish Creek Animal Clinic</a></h1>
+    </header>
+
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="askvet.html">Ask the Vet</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Contact Fish Creek</h2>
+      <p>Fill out the form below to contact Fish Creek. All information is required.</p>
+
+      <form method="post" action="https://webdevbasics.net/scripts/fishcreek.php">
+        <label for="myName">Name:</label>
+        <input type="text" id="myName" name="myName" required>
+
+        <label for="myEmail">E-mail:</label>
+        <input type="email" id="myEmail" name="myEmail" required>
+
+        <label for="myReason">Reason for Contact:</label>
+        <input type="text" id="myReason" name="myReason" list="reasons" required>
+        <datalist id="reasons">
+          <option>New Patient</option>
+          <option>Appointment</option>
+          <option>House Call</option>
+          <option>Information</option>
+          <option>Ask the Vet</option>
+        </datalist>
+
+        <label for="myComments">Comments:</label>
+        <textarea id="myComments" name="myComments" rows="4" cols="30" required></textarea>
+
+        <input type="submit" id="mySubmit" value="Send Now">
+      </form>
+    </main>
+
+    <footer>
+      &copy; 2020 Fish Creek Animal Clinic<br>
+      <a href="mailto:yourfirstname@yourlastname.com">yourfirstname@yourlastname.com</a>
+    </footer>
+  </div>
+</body>
+</html>
